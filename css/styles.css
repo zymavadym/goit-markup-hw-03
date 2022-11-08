@@ -53,6 +53,7 @@ address {
     margin-right: 93px;
 }
 
+.header-mail,
 .header-studio,
 .header-potfolio {
     margin-right: 50px;
@@ -60,10 +61,6 @@ address {
 
 .header-contacts {
     margin-right: 344px;
-}
-
-.header-mail {
-    margin-right: 50px;
 }
 
 .web-footer {
@@ -164,7 +161,6 @@ address {
     margin: 30px 492px 200px 492px;
     border: none;
     border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-service:hover,
