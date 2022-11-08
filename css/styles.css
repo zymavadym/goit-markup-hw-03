@@ -5,15 +5,74 @@ body {
 }
 
 :root {
-    --brand-color: #2196F3;
+    --brand-dark-blue: #0616a5;
+    --brand-light-blue: #2196F3;
+    --brand-white: #FFFFFF;
+    --brand-dark: #000;
+    --brand-grey: #757575; 
+    --brand-black: #212121; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, 
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .web-header {
     color: #000;
+    margin-right: 93px;
+}
+
+.header-studio,
+.header-potfolio {
+    margin-right: 50px;
+}
+
+.header-contacts {
+    margin-right: 344px;
+}
+
+.header-mail {
+    margin-right: 50px;
 }
 
 .web-footer {
-    color: #FFFFFF;
+    color: var(--brand-white);
+}
+
+.header {
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 .logo {
@@ -21,7 +80,7 @@ body {
     font-size: 26px;
     line-height: 1.1923;
     letter-spacing: 0.03em;
-    color: var(--brand-color);
+    color: var(--brand-light-blue);
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
 }
@@ -29,6 +88,11 @@ body {
 .header .logo {
     font-weight: 700;
     font-size: 26px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .header a {
@@ -42,15 +106,16 @@ body {
 .header-nav,
 .header-contact {
     list-style: none;
+    display: flex;
 }
 
 .header-nav-link {
-    color: #000;
+    color: var(--brand-dark);
 }
 
 .header-mail,
 .header-telnumber {
-    color: #757575;
+    color: var(--brand-grey);
 }
 
 .header-nav-link:hover,
@@ -59,13 +124,13 @@ body {
 .header-nav-link:focus,
 .header-mail:focus,
 .header-telnumber:focus {
-    color: var(--brand-color);
+    color: var(--brand-light-blue);
 }
 
 .header-nav-link:active,
 .header-mail:active,
 .header-telnumber:active {
-    color: #0616a5;
+    color: var(--brand-dark-blue);
 }
 
 .hero {
@@ -81,19 +146,26 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--brand-white);
+    padding: 200px 252px 30px 252px;
 }
 
 .button-service {
+    min-width: 267px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: var(--brand-color); 
+    color: var(--brand-white);
+    background: var(--brand-light-blue); 
     cursor: pointer;
-    }
+    margin: 30px 492px 200px 492px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 
 .button-service:hover,
 .button-service:focus {
@@ -101,29 +173,41 @@ body {
 }
 
 .button-service:active {
-    background-color: #0616a5;
+    background-color: var(--brand-dark-blue);
 }
 
 .advantages { 
     text-align: center;
     font-size: 25px;
+    margin-top: 60px;
 }
 
 .text {
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.03em;
+
 }
 
 .adv-list {
     list-style: none;
+    padding-top: 89px;
+    padding-bottom: 94px;
+    display: flex;
 }
 
 .content {
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--brand-grey);
+    padding-top: 10px;
+}
+
+.detales, 
+.tasks,
+.plan {
+    margin-right: 30px;
 }
 
 .about {
@@ -131,7 +215,8 @@ body {
     line-height: 1.1666;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--brand-black);
+    padding-bottom: 50px;
 }
 
 .our-team {
@@ -139,10 +224,19 @@ body {
     line-height: 1.6666;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .info {
     list-style: none;
+    padding-bottom: 94px;
+    display: flex;
+}
+
+.employment-one, 
+.employment-two {
+    margin-right: 30px;
 }
 
 .employers {
@@ -154,17 +248,22 @@ body {
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .content-about {
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--brand-grey);
+    padding-bottom: 124px;
 }
 
 .footer { 
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .adress-footer {
@@ -179,7 +278,7 @@ body {
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--brand-white);
     text-decoration: none;
 }
 
@@ -195,15 +294,19 @@ body {
 .link:hover,
 .adress-map:focus,
 .link:focus {
-    color: var(--brand-color);
+    color: var(--brand-light-blue);
 }
 
 .work {
     text-align: center;
+    padding-top: 30px;
 }
 
 .button {
     list-style: none;
+    display: flex;
+    text-align: center;
+    margin-top: 94px;
 }
 
 .buttons {
@@ -212,24 +315,23 @@ body {
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--brand-black);
     background-color: #F5F4FA;
     
 }
 .buttons:hover,
 .buttons:focus {
-    color: #FFFFFF;
-    background-color: var(--brand-color);
+    color: var(--brand-white);
+    background-color: var(--brand-light-blue);
 }
 
 .buttons:active {
-    color: #FFFFFF;
-    background-color: #0616a5;
+    color: var(--brand-white);
+    background-color: var(--brand-dark-blue);
 }
 
 .button .buttons {
-    font-family: inherit;
-    cursor: pointer; 
+    font-family: inherit; 
 }
 
 .all {
@@ -244,7 +346,7 @@ body {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--brand-black);
     text-decoration: none;
 }
 
@@ -253,19 +355,19 @@ body {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--brand-grey);
 }
 
 .link-about {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--brand-grey);
     text-decoration: none;
 }
 
 .current {
-    color: var(--brand-color);
+    color: var(--brand-light-blue);
 }
 
 
