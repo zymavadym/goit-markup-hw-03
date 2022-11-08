@@ -181,7 +181,7 @@ address {
 .advantages { 
     text-align: center;
     font-size: 25px;
-    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .text {
@@ -193,8 +193,8 @@ address {
 
 .adv-list {
     list-style: none;
-    margin-top: 89px;
-    margin-bottom: 94px;
+    padding-top: 89px;
+    padding-bottom: 94px;
     display: flex;
     gap: 30px;
 }
@@ -213,12 +213,12 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-black);
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .info {
     list-style: none;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     display: flex;
     gap: 30px;
 }
@@ -249,7 +249,7 @@ address {
     background-color: #FFFFFF;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -321,9 +321,10 @@ address {
     list-style: none;
     display: flex;
     text-align: center;
-    margin-top: 65px;
-    margin-bottom: 50px;
-    margin-left: 300px;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+    gap: 8px;
 }
 
 .buttons {
@@ -337,8 +338,7 @@ address {
     color: var(--brand-black);
     background-color: #F5F4FA;
     border-radius: 4px;
-    border: none;
-    margin-right: 8px; 
+    border: none; 
 }
 .buttons:hover,
 .buttons:focus {
