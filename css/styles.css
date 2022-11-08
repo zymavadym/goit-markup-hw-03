@@ -196,6 +196,7 @@ address {
     margin-top: 89px;
     margin-bottom: 94px;
     display: flex;
+    gap: 30px;
 }
 
 .content {
@@ -204,12 +205,6 @@ address {
     letter-spacing: 0.03em;
     color: var(--brand-grey);
     padding-top: 10px;
-}
-
-.detales, 
-.tasks,
-.plan {
-    margin-right: 30px;
 }
 
 .about {
@@ -225,11 +220,7 @@ address {
     list-style: none;
     margin-bottom: 94px;
     display: flex;
-}
-
-.employment-one, 
-.employment-two {
-    margin-right: 30px;
+    gap: 30px;
 }
 
 .team {
@@ -249,13 +240,13 @@ address {
 .employers {
     list-style: none;
     display: flex;
+    gap: 30px;
 }
 
 .info-about-employers {
     width: 270px;
     height: 368px;
     background-color: #FFFFFF;
-    margin-right: 30px;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 94px;
