@@ -299,14 +299,13 @@ address {
 
 .work {
     text-align: center;
-    padding-top: 30px;
 }
 
 .button {
     list-style: none;
     display: flex;
     text-align: center;
-    margin-top: 94px;
+    margin-top: 65px;
     margin-bottom: 50px;
 }
 
