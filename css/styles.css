@@ -1,7 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif; 
-    background-color: #FFFFFF;
     color: #212121;
+}
+
+main,
+header {
+    background-color: var(--brand-white);
 }
 
 :root {
@@ -11,6 +15,7 @@ body {
     --brand-dark: #000;
     --brand-grey: #757575; 
     --brand-black: #212121; 
+    --brand-white-grey: #F5F5F5;
 }
 
 * {
@@ -218,7 +223,7 @@ address {
 
 .info {
     list-style: none;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
     display: flex;
 }
 
@@ -227,13 +232,18 @@ address {
     margin-right: 30px;
 }
 
+.team {
+    background-color: #F5F4FA;
+    height: 648px;
+}
+
 .our-team {
     font-size: 36px;
     line-height: 1.6666;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 
 .employers {
@@ -242,7 +252,14 @@ address {
 }
 
 .info-about-employers {
+    width: 270px;
+    height: 368px;
+    background-color: #FFFFFF;
     margin-right: 30px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    margin-bottom: 94px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .names {
