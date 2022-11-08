@@ -188,8 +188,8 @@ address {
 
 .adv-list {
     list-style: none;
-    padding-top: 89px;
-    padding-bottom: 94px;
+    margin-top: 89px;
+    margin-bottom: 94px;
     display: flex;
 }
 
@@ -213,7 +213,7 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-black);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .our-team {
@@ -258,13 +258,10 @@ address {
 }
 
 .footer { 
+    height: 252px;
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.adress-footer {
-    font-style: normal;
 }
 
 .address {
@@ -292,6 +289,15 @@ address {
 .adress-map:focus,
 .link:focus {
     color: var(--brand-light-blue);
+}
+
+.adress-map-link {
+    margin-top: 20px;
+}
+
+.mail-link,
+.phone-link {
+    margin-top: 9px;
 }
 
 .work {
@@ -371,6 +377,7 @@ address {
 .current {
     color: var(--brand-light-blue);
 }
+
 
 
 
