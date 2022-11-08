@@ -216,15 +216,6 @@ address {
     margin-bottom: 50px;
 }
 
-.our-team {
-    font-size: 36px;
-    line-height: 1.6666;
-    text-align: center;
-    letter-spacing: 0.03em;
-    padding-top: 94px;
-    padding-bottom: 50px;
-}
-
 .info {
     list-style: none;
     padding-bottom: 94px;
@@ -236,8 +227,22 @@ address {
     margin-right: 30px;
 }
 
+.our-team {
+    font-size: 36px;
+    line-height: 1.6666;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
+
 .employers {
     list-style: none;
+    display: flex;
+}
+
+.info-about-employers {
+    margin-right: 30px;
 }
 
 .names {
@@ -254,7 +259,7 @@ address {
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color: var(--brand-grey);
-    padding-bottom: 124px;
+    margin-bottom: 124px;
 }
 
 .footer { 
