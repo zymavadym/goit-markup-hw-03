@@ -385,25 +385,26 @@ address {
 
 .titles-all {
     font-size: 18px;
-    
     letter-spacing: 0.06em;
     color: var(--brand-black);
     text-decoration: none;
-    padding: 20px 24px 4px 24px;
+    padding: 20px 24px 0px 24px;
+    min-width: 322px;
+    height: 36px;
 }
 
 .about-all {
     font-weight: 400;
     font-size: 16px;
-    
     letter-spacing: 0.03em;
     color: var(--brand-grey);
-    padding: 0px 24px 20px 24px;
+    padding: 20px 24px 20px 24px;
+    width: 322px;
+    height: 30px;
 }
 
 .link-about {
     font-size: 16px;
-
     letter-spacing: 0.03em;
     color: var(--brand-grey);
     text-decoration: none;
