@@ -53,30 +53,6 @@ address {
     margin: 0 auto;
 }
 
-.web-header {
-    color: #000;
-    margin-right: 93px;
-}
-
-.header-mail,
-.header-studio,
-.header-potfolio {
-    margin-right: 50px;
-}
-
-.header-contacts {
-    margin-right: 344px;
-}
-
-.web-footer {
-    color: var(--brand-white);
-}
-
-.header {
-    padding-top: 28px;
-    padding-bottom: 28px;
-}
-
 .logo {
     font-weight: 700;
     font-size: 26px;
@@ -85,6 +61,38 @@ address {
     color: var(--brand-light-blue);
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
+    margin-right: 93px;
+}
+
+.web-header {
+    color: #000;
+}
+
+.web-footer {
+    color: var(--brand-white);
+}
+
+.header-link-studio,
+.header-link-portfolio {
+    margin-right: 50px;
+}
+
+.header-link-mail {
+    margin-right: 40px;
+}
+
+.header-contact {
+    margin-left: auto;
+}
+
+.header-navigation {
+    margin-right: auto;
+}
+
+.header {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    vertical-align: auto;
 }
 
 .header .logo {
@@ -136,20 +144,21 @@ address {
 }
 
 .hero {
+    text-align: center;
     background-color: #2F303A;
     font-weight: 700;
     font-family: inherit;
+    padding: 200px 0px 200px 0px;
 }
 
 .title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.3636;
-    text-align: center;
+    line-height: 1.3636; 
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--brand-white);
-    padding: 200px 252px 30px 252px;
+    margin: 0px 252px 0px 252px;
 }
 
 .button-service {
@@ -163,10 +172,9 @@ address {
     color: var(--brand-white);
     background: var(--brand-light-blue); 
     cursor: pointer;
-    margin: 30px 492px 200px 492px;
     border: none;
     border-radius: 4px;
-    margin-left: 450px;
+    margin-top: 30px;
 }
 
 .button-service:hover,
@@ -176,6 +184,10 @@ address {
 
 .button-service:active {
     background-color: var(--brand-dark-blue);
+}
+ 
+.main-about {
+    padding: 92px 0px 94px 0px;
 }
 
 .advantages { 
@@ -193,8 +205,6 @@ address {
 
 .adv-list {
     list-style: none;
-    padding-top: 89px;
-    padding-bottom: 94px;
     display: flex;
     gap: 30px;
 }
@@ -213,12 +223,12 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-black);
-    padding-bottom: 50px;
+    margin-top: 94px;
+    margin-bottom: 50px;
 }
 
 .info {
     list-style: none;
-    padding-bottom: 94px;
     display: flex;
     gap: 30px;
 }
@@ -226,6 +236,7 @@ address {
 .team {
     background-color: #F5F4FA;
     height: 648px;
+    padding: 94px 0px 94px 0px;
 }
 
 .our-team {
@@ -233,8 +244,7 @@ address {
     line-height: 1.6666;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .employers {
@@ -249,7 +259,6 @@ address {
     background-color: #FFFFFF;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 94px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -267,7 +276,6 @@ address {
     line-height: 1.1875;
     letter-spacing: 0.03em;
     color: var(--brand-grey);
-    margin-bottom: 124px;
 }
 
 .footer { 
@@ -313,6 +321,10 @@ address {
     margin-top: 9px;
 }
 
+.main-portfolio {
+    padding: 94px 0px 94px 0px;
+}
+
 .work {
     text-align: center;
 }
@@ -320,10 +332,9 @@ address {
 .button {
     list-style: none;
     display: flex;
-    text-align: center;
-    padding-top: 65px;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 50px;
-    padding-left: 300px;
     gap: 8px;
 }
 
@@ -344,6 +355,7 @@ address {
 .buttons:focus {
     color: var(--brand-white);
     background-color: var(--brand-light-blue);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons:active {
@@ -357,31 +369,41 @@ address {
 
 .all {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .all-about { 
-    text-decoration: none;
+    width: 370px;
+    height: 404px;
+    left: 615px;
+    top: 262px;
+    background: var(--brand-white);
+    border: 1px solid #EEEEEE;
 }
 
 .titles-all {
     font-size: 18px;
-    line-height: 2;
+    
     letter-spacing: 0.06em;
     color: var(--brand-black);
     text-decoration: none;
+    padding: 20px 24px 4px 24px;
 }
 
 .about-all {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.875;
+    
     letter-spacing: 0.03em;
     color: var(--brand-grey);
+    padding: 0px 24px 20px 24px;
 }
 
 .link-about {
     font-size: 16px;
-    line-height: 1.875;
+
     letter-spacing: 0.03em;
     color: var(--brand-grey);
     text-decoration: none;
