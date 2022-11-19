@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <title>Портфоліо</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -15,27 +16,23 @@
     <header class="header">
         <div class="container header-container">
             <a class="logo" href="index.html">Web<span class="web-header">Studio</span></a>
-            <nav>
+            <nav class="header-navigation">
                 <ul class="header-nav">
-                    <li><a class="header-nav-link header-studio" href="index.html">Студія</a></li>
-                    <li><a class="header-nav-link header-potfolio current" href="portfolio.html">Портфоліо</a></li>
-                    <li><a class="header-nav-link header-contacts" href="#">Контакти</a></li>
+                    <li class="header-link-studio"><a class="header-nav-link header-studio" href="index.html">Студія</a></li>
+                    <li class="header-link-portfolio"><a class="header-nav-link header-potfolio current"href="portfolio.html">Портфоліо</a></li>
+                    <li class="header-link-contacts"><a class="header-nav-link header-contacts" href="#">Контакти</a></li>
                 </ul>
             </nav>
             <ul class="header-contact">
-                <li>
-                    <a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="header-telnumber" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
+                <li class="header-link-mail"><a class="header-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="header-link-telnumber"><a class="header-telnumber" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section>
+        <section class="main-portfolio">
             <div class="container">
-            <h1 class="work">Наша робота</h1>
+            <h1 hidden class="work">Наша робота</h1>
             <ul class="button">
                 <li><button class="buttons" type="button">Усі</button></li>
                 <li><button class="buttons" type="button">Веб-сайти</button></li>
