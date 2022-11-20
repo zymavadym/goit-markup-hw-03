@@ -22,6 +22,10 @@ header {
     box-sizing: border-box;
 }
 
+header {
+    border-bottom: 1.5px solid #ECECEC;
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +33,10 @@ h4,
 h5,
 h6, 
 p {
+    margin: 0;
+}
+
+* {
     margin: 0;
 }
 
@@ -62,10 +70,16 @@ address {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
     margin-right: 93px;
+    padding: 28px 0px 28px 0px;
 }
 
 .web-header {
     color: #000;
+}
+
+.header-navigation,
+.header-contact {
+    padding: 32px 0px 32px 0px;
 }
 
 .web-footer {
@@ -90,8 +104,6 @@ address {
 }
 
 .header {
-    margin-top: 24px;
-    margin-bottom: 25px;
     vertical-align: auto;
 }
 
@@ -162,7 +174,7 @@ address {
 }
 
 .button-service {
-    min-width: 267px;
+    min-width: 200px;
     height: 50px;
     font-weight: 700;
     font-size: 16px;
@@ -185,9 +197,9 @@ address {
 .button-service:active {
     background-color: var(--brand-dark-blue);
 }
- 
-.main-about {
-    padding: 92px 0px 94px 0px;
+
+.main {
+    padding-top: 94px;
 }
 
 .advantages { 
@@ -209,12 +221,21 @@ address {
     gap: 30px;
 }
 
+.plan,
+.tasks {
+    width: 270px;
+}
+
 .content {
     font-size: 14px;
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--brand-grey);
-    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.section-about {
+    padding: 94px 0px 94px 0px;
 }
 
 .about {
@@ -223,14 +244,17 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--brand-black);
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin: 0px 0px 50px 0px;
 }
 
 .info {
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+.text-about-employers {
+    padding: 30px 0px 30px 0px;
 }
 
 .team {
@@ -244,7 +268,11 @@ address {
     line-height: 1.6666;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin: 0px 0px 50px 0px;
+}
+
+.employers-img {
+    display: block;
 }
 
 .employers {
@@ -260,6 +288,7 @@ address {
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 0;
 }
 
 .names {
@@ -267,8 +296,7 @@ address {
     font-size: 16px;
     line-height: 1.1875;
     letter-spacing: 0.03em;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .content-about {
@@ -334,7 +362,7 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     gap: 8px;
 }
 
@@ -383,24 +411,30 @@ address {
     border: 1px solid #EEEEEE;
 }
 
+.div-all-about {
+    padding: 20px 24px 20px 24px;
+}
+
+.img-all-about {
+    display: block;
+} 
+
 .titles-all {
     font-size: 18px;
+    line-height: 36px;
     letter-spacing: 0.06em;
     color: var(--brand-black);
     text-decoration: none;
-    padding: 20px 24px 0px 24px;
     min-width: 322px;
-    height: 36px;
+    margin-bottom: 4px;
 }
 
 .about-all {
+    line-height: 30px;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--brand-grey);
-    padding: 20px 24px 20px 24px;
-    width: 322px;
-    height: 30px;
 }
 
 .link-about {
